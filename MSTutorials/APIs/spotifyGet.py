@@ -4,8 +4,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import durationMod
 
 # Environmental variables
-os.environ['SPOTIPY_CLIENT_ID'] = 'MyClientID'
-os.environ['SPOTIPY_CLIENT_SECRET'] = 'MySecret'
+os.environ['SPOTIPY_CLIENT_ID'] = '29ec332432af475bab2f02f81b640081'
+os.environ['SPOTIPY_CLIENT_SECRET'] = 'c92dc74357084578bea5070c352d8eda'
 
 # id of Twenty One Pilots
 artistId = '3YQKmKGau1PzlVlkL1iodx'
