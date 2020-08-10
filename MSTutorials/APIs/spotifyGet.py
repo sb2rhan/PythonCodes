@@ -34,7 +34,7 @@ def getTracksOfArtist(artistId) -> list:
     # getting artist's top tracks
     tracksResult = spotify.artist_top_tracks(lz_uri)
 
-    for track in tracksResult['tracks'][:10]:
+    for track in tracksResult['tracks'][:20]:
         tmpTrack = ""
         tmpTrack += 'Track: ' + track['name'] + ' \n'
         tmpTrack += 'Popularity(0-100): ' + str(track['popularity']) + ' \n'

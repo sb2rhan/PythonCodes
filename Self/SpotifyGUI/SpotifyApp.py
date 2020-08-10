@@ -26,20 +26,21 @@ entry_bar.place(relx=0.35, rely=0, relwidth=0.35, relheight=1)
 button = tk.Button(upper_frame, text="Search tracks", fg="green",
                    font=FONT,
                    command=lambda:
-                   getTracksOfArtist(entry_bar.get(), list_box))
+                   getTracksOfArtist(entry_bar.get(), requestBox))
 button.place(relx=0.75, rely=0, relwidth=0.25, relheight=1)
 
 # for presenting list of tracks
 lower_frame = tk.Frame(canvas, bd=10)
 lower_frame.place(relx=0.5, rely=0.25, relwidth=0.9, relheight=0.7, anchor='n')
 
-scrollbar = tk.Scrollbar(lower_frame, orient="horizontal")
-scrollbar.pack(side="bottom", fill="x")
+scrollbar = tk.Scrollbar(lower_frame, orient="vertical")
+scrollbar.pack(side="right", fill="y")
 
 # for storing tracks
-list_box = tk.Listbox(lower_frame, width=150, height=50, xscrollcommand=scrollbar.set)
-list_box.pack(fill="both")
+requestBox = tk.Text(lower_frame, width=150, height=50,
+                     yscrollcommand=scrollbar.set)
+requestBox.pack(fill="both")
 
-scrollbar.config(command=list_box.xview)
+scrollbar.config(command=requestBox.yview)
 
 root.mainloop()
