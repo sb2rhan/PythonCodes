@@ -5,6 +5,7 @@
 
 def deeply_sort(alist: list) -> None:
     # converting list and str to tuples
+    # we sort str and list by their length
     for i in range(0, len(alist)):
         if isinstance(alist[i], list):
             deeply_sort(alist[i])
