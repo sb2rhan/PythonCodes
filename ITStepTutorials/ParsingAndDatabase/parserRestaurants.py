@@ -1,3 +1,4 @@
+# 4. Спарсить названия ресторанов со страницы сайта https://restoran.kz/restaurant  и собрать все рестораны.
 import requests
 import re
 from bs4 import BeautifulSoup
@@ -9,7 +10,7 @@ URL = 'restaurant'
 
 HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0',
+    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0',
     'Connection': 'keep-alive'
 }
 
@@ -82,4 +83,4 @@ def get_all_restaurants() -> list:
 
     return result
 
-# print(get_all_restaurants())
+print(get_all_restaurants())
