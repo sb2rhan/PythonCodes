@@ -50,3 +50,31 @@ import random as rand
 # tup3 = tup1 + tup2
 # print(tup1, tup2, tup3)
 # print('Count of zeros in tup3:', tup3.count(0))
+
+# 6
+# first_set = frozenset(input('First: ').split())
+# second_set = frozenset(input('Second: ').split())
+# print(sorted(first_set.intersection(second_set), reverse=True))
+
+# 7
+# chars = input('Enter: ').split()
+# check_set = set()
+
+# for char in chars:
+#     if char in check_set:
+#         print('Yes')
+#     else:
+#         print('No')
+#     check_set.add(char)
+
+# 8
+# from datetime import datetime
+
+
+# date_ = {}
+# curr_date = datetime.now()
+# date_['year'] = curr_date.year
+# date_['month'] = curr_date.month
+# date_['day'] = curr_date.day
+
+# print(date_)

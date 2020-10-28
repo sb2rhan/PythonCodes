@@ -1,4 +1,5 @@
-#       Creation of tuples
+#       Tuples       #
+
 # tuples are not mutable
 
 # a = (10, 2, 1.3, 'stack', True)

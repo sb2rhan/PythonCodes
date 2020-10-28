@@ -1,4 +1,5 @@
-#       Creation        #
+#       Set        #
+
 # in sets there are no duplicates
 # uses the same curly braces as dictionaries
 
@@ -65,3 +66,15 @@
 # c = {22, 0}
 # print('c and a are not joined:', c.isdisjoint(a))
 # print('c and b are not joined:',c.isdisjoint(b))
+
+
+
+#       Frozen set      #
+# like set, it puts elements in any order
+# after init, we cannot update or delete from it
+# other methods are same
+
+fr_set = frozenset('ridiculous') # give any iterable element
+print(fr_set)
+for item in fr_set:
+    print(item)
