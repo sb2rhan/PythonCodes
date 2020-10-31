@@ -26,7 +26,9 @@ example_text = '''
 text_version1 = ''
 text_version2 = ''
 
+# !!! Change this path to your own !!!
 path_to_file = 'ITStepTutorials\\Homeworks\\HW8\\words_changer\\'
+
 dictionary_syn = {}
 with open(path_to_file + 'synonyms-base.csv', mode='r', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile, dialect='excel')
