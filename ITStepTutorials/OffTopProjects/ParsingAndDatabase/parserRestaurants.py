@@ -2,7 +2,6 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-from time import sleep
 
 
 HOST = 'https://restoran.kz'

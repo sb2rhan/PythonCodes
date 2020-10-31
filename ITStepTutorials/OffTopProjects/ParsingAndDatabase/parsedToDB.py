@@ -31,7 +31,7 @@ try:
 
     for r in restaurants:
         cursor.execute(
-            f"""INSERT INTO restaurants(name, link, phone_number, address, cuisine, cost, additional) 
+            """INSERT INTO restaurants(name, link, phone_number, address, cuisine, cost, additional) 
             VALUES(%s, %s, %s, %s, %s, %s, %s)""",
             (r['Название'], r['Ссылка'], r['Номер телефона'], r['Адрес'], 
             r['Кухня'], r['Примерная цена'], r['Дополнительно'])
