@@ -38,4 +38,4 @@ moder = Moderator('Veocn3')
 moder.ban_user(alan, 'Flood and spam')
 
 admin1 = Admin('coolDude')
-admin1.ban_moderator(moder, 'Ban without warning')
+admin1.ban_moderator(moder, 'Banned a user without warning')

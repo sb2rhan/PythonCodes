@@ -12,7 +12,7 @@ class Car:
 
     """
     Difference between static method and class method:
-        1. Static method behaves as method that is not included in the class, so it can operate with outer things
+        1. Static method behaves as method that is not included in the class, so it behaves as module function
         2. Class method takes cls argument and uses it for working with class
     """
     @staticmethod
